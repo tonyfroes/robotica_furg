@@ -12,7 +12,7 @@ Robô
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/tonyfroes/robotica_furg.git
+    git clone https://github.com/seu-usuario/nome-do-repositorio.git
     ```
 
 2. Navegue para o diretório do projeto:
@@ -37,7 +37,12 @@ Robô
     source /opt/ros/humble/setup.bash
     ```
 
-2. Execute o nó principal:
+2. Execute:
+
+    ```bash
+     ros2 launch stage_ros2 stage.launch.py world:=cave enforce_prefixes:=false one_tf_tree:=true
+    ```
+3. Execute:
 
     ```bash
     ros2 run control_stage controlador.py
